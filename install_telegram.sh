@@ -5,17 +5,20 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-echo "Downloading package"
-wget https://telegram.org/dl/desktop/linux
+version="2.4.3"
+url="https://telegram.org/dl/desktop/linux"
 
-echo "Extracting Telegram"
-tar -xzf pycharm-community-2020.2.2.tar.gz
+echo "Downloading package"
+wget $url
 
 echo "Moving Telegram folder to /opt directory"
-mv Telegram/ /opt/
+mv tsetup.$version.tar.xz/ /opt/
 
 echo "Entering opt/"
 cd /opt/
+
+echo "Extracting Telegram"
+tar -xzf tsetup.$version.tar.xz
 
 echo "Entering Telegram folder"
 cd Telegram/
