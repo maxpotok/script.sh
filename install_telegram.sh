@@ -6,13 +6,13 @@ if [ "$EUID" -ne 0 ]
 fi
 
 version="2.4.3"
-url="https://telegram.org/dl/desktop/linux"
+url="https://telegram.org/dl/desktop/linux/tsetup.$version.tar.xz"
 
 echo "Downloading package"
 wget $url
 
 echo "Moving Telegram folder to /opt directory"
-mv tsetup.$version.tar.xz/ /opt/
+mv tsetup.$version.tar.xz /opt/
 
 echo "Entering opt/"
 cd /opt/

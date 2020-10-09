@@ -9,10 +9,10 @@ version="2020.2.2"
 url="https://download.jetbrains.com/python/pycharm-community-$version.tar.gz"
 
 echo "Downloading package"
-wget $url
+#wget $url
 
 echo "Moving Pycharm folder to /opt directory"
-mv pycharm-community-$version.tar.gz/ /opt/
+mv pycharm-community-$version.tar.gz /opt/
 
 echo "Entering opt/"
 cd /opt/
