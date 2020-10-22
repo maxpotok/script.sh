@@ -18,7 +18,7 @@ echo "Setting default Java environment"
 apt-get install oracle-java8-set-default
 
 echo "Downloading Eclipse"
-#wget $url
+wget $url
 
 echo "Moving Eclipse archive to /opt directory"
 mv $package /opt/
