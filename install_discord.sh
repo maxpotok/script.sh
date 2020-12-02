@@ -18,7 +18,7 @@ then
 fi
 
 echo "Downloading discord .deb file"
-#wget $url
+wget $url
 
 echo "Installing discord"
 gdebi "download?platform=linux&format=deb"
